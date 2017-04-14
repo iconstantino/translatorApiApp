@@ -1,17 +1,20 @@
 <template>
-  <div id="Translate Form">
-    <Form v-on:submit="formSubmit">
-        <input type="text" v-model="textToTranslate" placeholder="Enter a word">
-        <select v-model="language">
-            <option value="es" >Spanish</option>
-            <option value="ru" >Russian</option>
-            <option value="fr" >French</option>
-            <option value="de" >German</option>
-            <option value="da" >Danish</option>
-            <option value="ch" >Chinese</option>
-        </select>
-        <input type="submit" value="Translate">
-    </form>
+  <div class="row" id="translateForm">
+    <div class="col-md-6 col-md-offset-3">
+        <form id="transForm" class="well form-inline" v-on:submit="formSubmit">
+            <input class="form-control" type="text" v-model="textToTranslate" placeholder="Enter a word or a phrase">
+            <select class="form-control" v-model="language">
+                <option value="es" >Spanish</option>
+                <option value="ru" >Russian</option>
+                <option value="fr" >French</option>
+                <option value="de" >German</option>
+                <option value="da" >Danish</option>
+                <option value="ch" >Chinese</option>
+            </select>
+            <br><br>
+            <input class="btn btn-success" type="submit" value="Translate">
+        </form>
+    </div>
   </div>
 </template>
 
@@ -37,4 +40,8 @@ export default {
 </script>
 
 <style>
+#transForm {
+    border-radius: 10px;
+    border: 1px grey solid;
+}
 </style>

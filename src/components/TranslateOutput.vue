@@ -1,5 +1,5 @@
 <template>
-    <h2>{{translatedText}}</h2>
+    <h2 class="translated-text">{{translatedText}}</h2>
 </template>
 
 <script>
@@ -10,4 +10,7 @@ export default {
 </script>
 
 <style>
+    .translated-text {
+        color: brown;
+    }
 </style>

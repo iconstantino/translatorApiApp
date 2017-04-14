@@ -1,7 +1,9 @@
 <template>
-  <div id="app">
+  <div class="text-center" id="app">
     <h1>Word Translator</h1>
-    <h5>Written with Vue.js</h5>
+    <h5>Written with <img id="vue-logo-inline" src="https://cdn.auth0.com/blog/vuejs/vue-logo.png"></h5>
+    <br>
+    <h3 class="text-uppercase">Translates from English to a language of your choosing</h3>
     <TranslateForm v-on:formSubmit="translateText"></TranslateForm>
     <TranslateOutput v-text="translatedText"></TranslateOutput>
   </div>
@@ -35,6 +37,11 @@ export default {
 </script>
 
 <style>
-#app {
+body {
+  background-color: #f9f9eb; 
+}
+
+#vue-logo-inline{
+  max-height: 20px;
 }
 </style>
