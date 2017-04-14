@@ -5,7 +5,7 @@
 <script>
 export default {
   name: 'translateOutput',
-  pros: ['translatedText']
+  props: ['translatedText']
 }
 </script>
 
