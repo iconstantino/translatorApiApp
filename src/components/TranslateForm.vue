@@ -5,11 +5,13 @@
             <input class="form-control" type="text" v-model="textToTranslate" placeholder="Enter a word or a phrase">
             <select class="form-control" v-model="language">
                 <option value="es" >Spanish</option>
-                <option value="ru" >Russian</option>
                 <option value="fr" >French</option>
+                <option value="it" >Italian</option>
                 <option value="de" >German</option>
-                <option value="da" >Danish</option>
-                <option value="ch" >Chinese</option>
+                <option value="ru" >Russian</option>
+                <option value="zh" >Chinese</option>
+                <option value="ko" >Korean</option>
+                <option value="ar" >Arabic</option>
             </select>
             <br><br>
             <input class="btn btn-success" type="submit" value="Translate">
